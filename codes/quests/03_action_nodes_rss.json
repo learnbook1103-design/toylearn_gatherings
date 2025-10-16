@@ -1,0 +1,197 @@
+{
+  "name": "03_action_nodes_rss",
+  "nodes": [
+    {
+      "parameters": {
+        "chatId": "8466441298",
+        "text": "=제목 : {{ $json.title }}\n발행일 : {{ $json.pubDate }}\n",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        368,
+        32
+      ],
+      "id": "8ff42949-54b0-41d9-a600-df89d8566c63",
+      "name": "Send a text message",
+      "webhookId": "c0bd95b1-4e71-4c1a-9f99-52c064f2a7c6",
+      "credentials": {
+        "telegramApi": {
+          "id": "KFISNeCAkTVsT1XV",
+          "name": "Telegram account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -272,
+        112
+      ],
+      "id": "fce543ba-080f-4969-abca-f7911a7e93ca",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "url": "https://www.yna.co.kr/rss/industry.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -64,
+        32
+      ],
+      "id": "70b60160-5847-4f79-bd3b-6a230db42bd4",
+      "name": "RSS Read"
+    },
+    {
+      "parameters": {
+        "maxItems": 3,
+        "keep": "lastItems"
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        144,
+        32
+      ],
+      "id": "b84ec7a8-9933-42ca-9311-77f8938f342d",
+      "name": "Limit"
+    },
+    {
+      "parameters": {
+        "chatId": "8466441298",
+        "text": "output form : xml",
+        "additionalFields": {}
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        368,
+        192
+      ],
+      "id": "66bcc2d7-0773-44b0-a0d6-dccf6882fca2",
+      "name": "Send a text message1",
+      "webhookId": "c0bd95b1-4e71-4c1a-9f99-52c064f2a7c6",
+      "credentials": {
+        "telegramApi": {
+          "id": "KFISNeCAkTVsT1XV",
+          "name": "Telegram account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://rss.donga.com/science.xml",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.2,
+      "position": [
+        -64,
+        192
+      ],
+      "id": "51768eef-d8be-4d06-8228-e63663e48714",
+      "name": "RSS Read1"
+    },
+    {
+      "parameters": {
+        "maxItems": 3,
+        "keep": "lastItems"
+      },
+      "type": "n8n-nodes-base.limit",
+      "typeVersion": 1,
+      "position": [
+        144,
+        192
+      ],
+      "id": "a9a56877-6575-463a-9377-023a3eb1c122",
+      "name": "Limit1"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "RSS Read",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "RSS Read1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RSS Read": {
+      "main": [
+        [
+          {
+            "node": "Limit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit": {
+      "main": [
+        [
+          {
+            "node": "Send a text message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RSS Read1": {
+      "main": [
+        [
+          {
+            "node": "Limit1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limit1": {
+      "main": [
+        [
+          {
+            "node": "Send a text message1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "bbf3e67c-e8f7-4bfd-93b2-9c3dafba4508",
+  "meta": {
+    "instanceId": "e9529a4669fa3157f424e9b03106d361af2936f02b1b6a02d6246abc6077d44d"
+  },
+  "id": "pdrp766JkOoTBPNE",
+  "tags": []
+}
