@@ -377,7 +377,7 @@
         "messages": {
           "values": [
             {
-              "content": "=너는 30년 경력의 요약 전문가야 \n다음의 기사들을 100자로 요약 해줘\n[제공 기사]\n{{ $json['기사요약'] }}"
+              "content": "=너는 30년 경력의 요약 전문가야 \n다음의 기사들을 100자로 요약 해줘\n-도출된 값만 표기\n[제공 기사]\n{{ $json['기사요약'] }}"
             }
           ]
         },
@@ -698,7 +698,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "81d893ef-993d-4ef1-87d3-fb37f72d2c5c",
+  "versionId": "9c851de0-521e-46de-8f78-f88b3401592c",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "e9529a4669fa3157f424e9b03106d361af2936f02b1b6a02d6246abc6077d44d"
