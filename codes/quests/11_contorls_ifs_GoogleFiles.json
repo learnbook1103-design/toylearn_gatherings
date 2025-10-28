@@ -87,7 +87,7 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        416,
+        448,
         -96
       ],
       "id": "42174db7-c3c6-4079-86bd-ee45de7c292b",
@@ -98,26 +98,6 @@
           "name": "Google Sheets account"
         }
       }
-    },
-    {
-      "parameters": {
-        "fieldsToAggregate": {
-          "fieldToAggregate": [
-            {
-              "fieldToAggregate": "refer : https://github.com/yoju-lab/koreatech_RPAs_GenAI/wiki"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.aggregate",
-      "typeVersion": 1,
-      "position": [
-        624,
-        -96
-      ],
-      "id": "fe18bf65-0698-4145-a5d0-c3be50780948",
-      "name": "Aggregate"
     },
     {
       "parameters": {
@@ -372,6 +352,29 @@
           "name": "Google Drive account 2"
         }
       }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9b2c36d5-f00f-491e-9bd1-a7b9982b6ab7",
+              "name": "=resorce",
+              "value": "={{ $json }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        624,
+        -96
+      ],
+      "id": "8487327a-2a41-47a0-a3e4-f060e79bc5cc",
+      "name": "Edit Fields"
     }
   ],
   "pinData": {},
@@ -409,18 +412,7 @@
       "main": [
         [
           {
-            "node": "Aggregate",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Aggregate": {
-      "main": [
-        [
-          {
-            "node": "Message a model",
+            "node": "Edit Fields",
             "type": "main",
             "index": 0
           }
@@ -477,13 +469,24 @@
           }
         ]
       ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Message a model",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "937372c5-03c7-4a56-b0d1-3d5f082a2faa",
+  "versionId": "ed30653c-f80e-420e-b1a6-19239a253300",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "cafc7e5cc8dff517f5c5cbfcd18f15d4698ef8e919ea46ab1b5281fac77b897e"
