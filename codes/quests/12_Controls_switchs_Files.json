@@ -76,7 +76,7 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        544,
+        528,
         -336
       ],
       "id": "eda45088-93b2-4c6d-aef0-137cecd3d474",
@@ -248,7 +248,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        720,
+        704,
         -336
       ],
       "id": "bc9d5ed3-81af-4df0-abf2-7f817a40f861",
@@ -268,7 +268,7 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        896,
+        880,
         -336
       ],
       "id": "3ef70918-d4d7-4c44-8d06-fff22fce722c",
@@ -1161,7 +1161,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        544,
+        528,
         -592
       ],
       "id": "a552e046-026f-43e4-853e-46c16a72b361",
@@ -1196,7 +1196,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        720,
+        704,
         -592
       ],
       "id": "e9583858-6aa5-49c8-a61b-1f8aa3919a9f",
@@ -1211,7 +1211,7 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        896,
+        880,
         -688
       ],
       "id": "a84be0ba-4e4b-4607-8387-7d2f33bb52d9",
@@ -1233,7 +1233,7 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        896,
+        880,
         -512
       ],
       "id": "68641371-912b-4944-8fdf-de6fa96ca13d",
@@ -1861,7 +1861,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "0ddc2cf3-97f1-4868-bc3d-9f105225b447",
+  "versionId": "4a5b0e8f-3250-43e4-bf62-b5862e71889f",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "cafc7e5cc8dff517f5c5cbfcd18f15d4698ef8e919ea46ab1b5281fac77b897e"
