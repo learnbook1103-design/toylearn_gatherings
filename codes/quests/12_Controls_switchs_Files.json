@@ -209,7 +209,7 @@
         "messages": {
           "values": [
             {
-              "content": "=제공된 내용을 분석하여 한 줄 정리하여 나타내줘\n\n{{ JSON.stringify($json) }}\n\n[output form]\n\"한 줄 정리\" : text"
+              "content": "=제공된 내용을 분석하여 한 줄 정리하여 나타내줘\n최대 글자 수 300자 미만으로 해줘\n\n{{ JSON.stringify($json) }}\n\n[output form]\n\"한 줄 정리\" : text"
             }
           ]
         },
@@ -351,7 +351,7 @@
           "mappingMode": "defineBelow",
           "value": {
             "파일 링크": "={{ $('Loop Over Items').item.json.webViewLink }}",
-            "한 줄 정리": "={{ $json.content.parts[0].text }}",
+            "한 줄 정리": "={{ $json.content.parts[0].text['한 줄 정리'] }}",
             "입력 날짜": "={{ $('Loop Over Items').item.json.createdTime }}",
             "파일 종류": "={{ $('Loop Over Items').item.json.mimeType }}",
             "파일 명": "={{ $('Loop Over Items').item.json.name }}"
@@ -417,7 +417,7 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1712,
+        1888,
         16
       ],
       "id": "2fd3b479-6ecc-40b9-9a72-59dcbeac8a83",
@@ -612,7 +612,7 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        2064,
+        2240,
         -336
       ],
       "id": "63fcc709-e246-4ac1-ba62-f07994f3df89",
@@ -648,7 +648,7 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        2064,
+        2240,
         -160
       ],
       "id": "fbba1ca7-b294-41c4-b162-85f278b50600",
@@ -684,7 +684,7 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        2064,
+        2240,
         16
       ],
       "id": "6eee02d8-305a-49cf-8431-751d26333303",
@@ -720,7 +720,7 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        2064,
+        2240,
         192
       ],
       "id": "0a9534a7-f4ee-4aad-aed6-8ceedd808ea3",
@@ -756,7 +756,7 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        2064,
+        2240,
         368
       ],
       "id": "d08cb26f-7091-462e-a617-be83365a3fe4",
@@ -792,7 +792,7 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        2064,
+        2240,
         544
       ],
       "id": "ce0f632c-3005-4f19-bfcf-9b233110d98a",
@@ -828,7 +828,7 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        2064,
+        2240,
         720
       ],
       "id": "be5af96b-6a8d-4e79-aad2-57324d95fffc",
@@ -1000,34 +1000,11 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.3,
       "position": [
-        1888,
+        2064,
         -32
       ],
       "id": "c46bafb8-7ae2-455f-9344-65ba5bb0ab9b",
       "name": "Switch2"
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "9d346ec7-65f8-42c1-8e87-871352c27414",
-              "name": "text",
-              "value": "={{ $('Message a model1').item.json.content.parts[0].text }}",
-              "type": "object"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        1712,
-        544
-      ],
-      "id": "342bf160-c0df-41a7-8976-8aea0ccbc356",
-      "name": "Edit Fields2"
     },
     {
       "parameters": {
@@ -1043,7 +1020,7 @@
                 },
                 "conditions": [
                   {
-                    "leftValue": "={{ $json.text.category }}",
+                    "leftValue": "={{ $('Edit Fields5').item.json.content.parts[0].text.category }}",
                     "rightValue": "economy",
                     "operator": {
                       "type": "string",
@@ -1066,7 +1043,7 @@
                 "conditions": [
                   {
                     "id": "37d6f1b6-dc4e-420b-b3b8-c4ab117d5342",
-                    "leftValue": "={{ $json.text.category }}",
+                    "leftValue": "={{ $('Edit Fields5').item.json.content.parts[0].text.category }}",
                     "rightValue": "culture",
                     "operator": {
                       "type": "string",
@@ -1089,7 +1066,7 @@
                 "conditions": [
                   {
                     "id": "3d3a7022-fd8b-4756-80a2-6e8b6d97631d",
-                    "leftValue": "={{ $json.text.category }}",
+                    "leftValue": "={{ $('Edit Fields5').item.json.content.parts[0].text.category }}",
                     "rightValue": "politics",
                     "operator": {
                       "type": "string",
@@ -1108,7 +1085,7 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.3,
       "position": [
-        1888,
+        2064,
         528
       ],
       "id": "c9cfb95f-1d73-45a2-8918-92192aad6311",
@@ -1387,6 +1364,29 @@
       ],
       "id": "f9385d3f-2634-473e-9ca2-0f60b8912c92",
       "name": "Edit Fields4"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "1c9072dd-d510-4e5e-8f54-20e10371cf6a",
+              "name": "content.parts[0].text",
+              "value": "={{ $json.content.parts[0].text }}",
+              "type": "object"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1712,
+        16
+      ],
+      "id": "a10de505-10de-4548-9e8f-4b9d8c5cd0e8",
+      "name": "Edit Fields5"
     }
   ],
   "pinData": {},
@@ -1530,7 +1530,7 @@
       "main": [
         [
           {
-            "node": "Append or update row in sheet",
+            "node": "Edit Fields5",
             "type": "main",
             "index": 0
           }
@@ -1541,7 +1541,7 @@
       "main": [
         [
           {
-            "node": "Append or update row in sheet",
+            "node": "Edit Fields5",
             "type": "main",
             "index": 0
           }
@@ -1650,17 +1650,6 @@
             "index": 0
           }
         ],
-        [
-          {
-            "node": "Edit Fields2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Edit Fields2": {
-      "main": [
         [
           {
             "node": "Switch3",
@@ -1855,13 +1844,24 @@
           }
         ]
       ]
+    },
+    "Edit Fields5": {
+      "main": [
+        [
+          {
+            "node": "Append or update row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "4a5b0e8f-3250-43e4-bf62-b5862e71889f",
+  "versionId": "464df3ff-5924-408f-848f-ef5053c985e2",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "cafc7e5cc8dff517f5c5cbfcd18f15d4698ef8e919ea46ab1b5281fac77b897e"
