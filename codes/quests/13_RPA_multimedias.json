@@ -12,8 +12,8 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
       "position": [
-        0,
-        128
+        -1152,
+        -768
       ],
       "id": "232123ce-185f-4515-9793-6153cbc41425",
       "name": "Schedule Trigger"
@@ -40,8 +40,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        208,
-        128
+        -944,
+        -768
       ],
       "id": "50613118-6821-426c-9470-49638d94d5fe",
       "name": "Search files and folders",
@@ -73,8 +73,8 @@
       "type": "@n8n/n8n-nodes-langchain.googleGemini",
       "typeVersion": 1,
       "position": [
-        1552,
-        128
+        -160,
+        -416
       ],
       "id": "59b849a3-b1f1-4d26-b9c6-a04e5cc9459e",
       "name": "Message a model",
@@ -102,8 +102,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        416,
-        128
+        -736,
+        -768
       ],
       "id": "1054e2b7-25c7-49a5-8166-c22c17befbb7",
       "name": "Download file1",
@@ -122,8 +122,8 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
-        608,
-        128
+        -544,
+        -768
       ],
       "id": "c07396e7-7089-490c-b42f-f06e4565f49a",
       "name": "Extract from File1"
@@ -136,8 +136,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        2128,
-        128
+        400,
+        -416
       ],
       "id": "9a1e37b4-c738-4931-ad72-7bedd4339cfc",
       "name": "Create a document",
@@ -164,8 +164,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        2336,
-        128
+        608,
+        -416
       ],
       "id": "3aa56d2b-a91d-44f2-90a8-9b292eeca8de",
       "name": "Update a document",
@@ -196,8 +196,8 @@
       "type": "@n8n/n8n-nodes-langchain.googleGemini",
       "typeVersion": 1,
       "position": [
-        976,
-        432
+        -160,
+        -128
       ],
       "id": "c1941d9e-aa66-4f6d-9b7b-30cff3264549",
       "name": "Message a model1",
@@ -216,8 +216,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        1328,
-        432
+        192,
+        -128
       ],
       "id": "91b09de7-bfda-423c-b37f-dffaebd4e57d",
       "name": "Create a document1",
@@ -244,8 +244,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        1536,
-        432
+        400,
+        -128
       ],
       "id": "2ed129c6-26a7-43fc-a8de-ac8afae07946",
       "name": "Update a document1",
@@ -280,8 +280,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        2176,
-        432
+        1024,
+        -128
       ],
       "id": "b4883048-a056-4a98-9120-8664cad8571e",
       "name": "Move file1",
@@ -300,8 +300,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        208,
-        608
+        -944,
+        48
       ],
       "id": "6c769a76-09cf-406a-aadf-9becb729f4c5",
       "name": "Get a document1",
@@ -332,8 +332,8 @@
       "type": "@n8n/n8n-nodes-langchain.googleGemini",
       "typeVersion": 1,
       "position": [
-        976,
-        608
+        -160,
+        48
       ],
       "id": "5b40e4a7-bd62-4d2f-ad3a-ab984b395ccb",
       "name": "Message a model2",
@@ -357,8 +357,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        400,
-        608
+        -736,
+        48
       ],
       "id": "cd5a0baf-b0ce-42e2-a8b7-6ad62c57c737",
       "name": "Download file3",
@@ -377,8 +377,8 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
-        592,
-        608
+        -544,
+        48
       ],
       "id": "a82e19af-61bd-4160-8f25-b0c222105c5a",
       "name": "Extract from File3"
@@ -391,8 +391,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        1328,
-        608
+        192,
+        48
       ],
       "id": "1de62c01-7d77-4e18-8bb9-cd35bc6663fa",
       "name": "Create a document2",
@@ -419,8 +419,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        1536,
-        608
+        400,
+        48
       ],
       "id": "b581aa4c-346b-48ae-bca9-bf212f751f99",
       "name": "Update a document2",
@@ -444,8 +444,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        992,
-        256
+        -736,
+        -288
       ],
       "id": "48d86a52-da07-434b-bf22-b3347fdb07b4",
       "name": "Download file4",
@@ -464,8 +464,8 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
-        1184,
-        256
+        -544,
+        -288
       ],
       "id": "60da8865-90d7-4443-b842-2043fab9a288",
       "name": "Extract from File4"
@@ -548,8 +548,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.3,
       "position": [
-        800,
-        112
+        -944,
+        -432
       ],
       "id": "0de0a481-e955-4861-ba9b-eaaf91df179f",
       "name": "Switch1"
@@ -562,8 +562,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        992,
-        128
+        -736,
+        -416
       ],
       "id": "d3d39b41-a044-4935-8a16-cb89666a03da",
       "name": "Get a document2",
@@ -591,8 +591,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        992,
-        0
+        -736,
+        -544
       ],
       "id": "e2d72dcf-b890-4063-ba4b-0d94fc6a6bdb",
       "name": "Get row(s) in sheet1",
@@ -617,8 +617,8 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        1376,
-        0
+        -352,
+        -544
       ],
       "id": "b9dec07f-a788-44ba-89a8-74121300177c",
       "name": "Aggregate1"
@@ -640,276 +640,22 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1184,
-        0
+        -544,
+        -544
       ],
       "id": "26e6b833-715c-4c24-9c8c-5eb5908e2eb4",
       "name": "Edit Fields1"
     },
     {
       "parameters": {
-        "operation": "text",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.extractFromFile",
-      "typeVersion": 1,
-      "position": [
-        176,
-        -784
-      ],
-      "id": "bc4b3cfc-bf15-409a-bd90-cedceca6c514",
-      "name": "Extract from File5"
-    },
-    {
-      "parameters": {
-        "operation": "download",
-        "fileId": {
-          "__rl": true,
-          "value": "={{ $json.id }}",
-          "mode": "id"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.googleDrive",
-      "typeVersion": 3,
-      "position": [
-        -16,
-        -784
-      ],
-      "id": "e431460b-904f-4cfb-86f2-837b731432b0",
-      "name": "Download file5",
-      "credentials": {
-        "googleDriveOAuth2Api": {
-          "id": "Vaq75Nvi2fudlEm4",
-          "name": "Google Drive account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "operation": "download",
-        "fileId": {
-          "__rl": true,
-          "value": "={{ $json.id }}",
-          "mode": "id"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.googleDrive",
-      "typeVersion": 3,
-      "position": [
-        880,
-        -704
-      ],
-      "id": "0e7a8a6f-848e-4596-a0a0-fcc7acec6ade",
-      "name": "Download file",
-      "credentials": {
-        "googleDriveOAuth2Api": {
-          "id": "Vaq75Nvi2fudlEm4",
-          "name": "Google Drive account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "operation": "text",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.extractFromFile",
-      "typeVersion": 1,
-      "position": [
-        1072,
-        -704
-      ],
-      "id": "0a6b941e-e63d-4054-b571-5851253b106f",
-      "name": "Extract from File"
-    },
-    {
-      "parameters": {
-        "rules": {
-          "values": [
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "strict",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "leftValue": "={{ $json.mimeType }}",
-                    "rightValue": "application/vnd.google-apps.spreadsheet",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals"
-                    },
-                    "id": "b51fe620-e9dd-4a7d-9c5c-32f6b4ca22b0"
-                  }
-                ],
-                "combinator": "and"
-              }
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "strict",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "b76edc0a-e8fc-4e32-ace5-6208a6ce84cc",
-                    "leftValue": "={{ $json.mimeType }}",
-                    "rightValue": "=application/vnd.google-apps.document",
-                    "operator": {
-                      "type": "string",
-                      "operation": "equals",
-                      "name": "filter.operator.equals"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              }
-            },
-            {
-              "conditions": {
-                "options": {
-                  "caseSensitive": true,
-                  "leftValue": "",
-                  "typeValidation": "strict",
-                  "version": 2
-                },
-                "conditions": [
-                  {
-                    "id": "22380063-16a7-4382-9a01-d5395c45033b",
-                    "leftValue": "={{ $json.mimeType }}",
-                    "rightValue": "text",
-                    "operator": {
-                      "type": "string",
-                      "operation": "contains"
-                    }
-                  }
-                ],
-                "combinator": "and"
-              }
-            }
-          ]
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.switch",
-      "typeVersion": 3.3,
-      "position": [
-        688,
-        -848
-      ],
-      "id": "0597a562-8e9b-4a04-b77b-06eea30361d2",
-      "name": "Switch2"
-    },
-    {
-      "parameters": {
         "operation": "get",
         "documentURL": "={{ $json.id }}"
       },
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        880,
-        -832
-      ],
-      "id": "b6896c72-535d-4c06-832a-d3756b0067d4",
-      "name": "Get a document3",
-      "credentials": {
-        "googleDocsOAuth2Api": {
-          "id": "6XFFv5sI5TNQCG2R",
-          "name": "Google Docs account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "documentId": {
-          "__rl": true,
-          "value": "={{ $json.id }}",
-          "mode": "id"
-        },
-        "sheetName": {
-          "__rl": true,
-          "value": "gid=0",
-          "mode": "id"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.googleSheets",
-      "typeVersion": 4.7,
-      "position": [
-        880,
-        -960
-      ],
-      "id": "71a77d1f-0440-46b3-8989-e9b4ae973711",
-      "name": "Get row(s) in sheet2",
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "p9iGa545CpY52JCd",
-          "name": "Google Sheets account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "fieldsToAggregate": {
-          "fieldToAggregate": [
-            {
-              "fieldToAggregate": "content"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.aggregate",
-      "typeVersion": 1,
-      "position": [
-        1264,
-        -960
-      ],
-      "id": "0174ff55-7b38-4e51-81b5-ce4d6ba15738",
-      "name": "Aggregate2"
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "6aa72e9e-f5bb-45c6-b72a-8a392d140dca",
-              "name": "content",
-              "value": "={{ $json }}",
-              "type": "string"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        1072,
-        -960
-      ],
-      "id": "06d89139-e5f6-4667-b095-cd9ee8dae486",
-      "name": "Edit Fields2"
-    },
-    {
-      "parameters": {
-        "operation": "get",
-        "documentURL": "={{ $json.id }}"
-      },
-      "type": "n8n-nodes-base.googleDocs",
-      "typeVersion": 2,
-      "position": [
-        208,
-        432
+        -944,
+        -128
       ],
       "id": "8bf68266-28c2-46fe-9463-fc0cee90d725",
       "name": "Get a document",
@@ -942,8 +688,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        1904,
-        128
+        192,
+        -416
       ],
       "id": "5c533dcf-affc-4d2f-bc12-1b5f8d3e072a",
       "name": "Move file3",
@@ -975,8 +721,8 @@
       "type": "n8n-nodes-base.googleDriveTrigger",
       "typeVersion": 1,
       "position": [
-        0,
-        432
+        -1152,
+        -128
       ],
       "id": "3fa57431-339c-479e-bb71-ebbc33da9d3a",
       "name": "Google Drive Trigger",
@@ -1008,8 +754,8 @@
       "type": "n8n-nodes-base.googleDriveTrigger",
       "typeVersion": 1,
       "position": [
-        0,
-        608
+        -1152,
+        48
       ],
       "id": "220c29c9-4a8f-423c-bc63-2f831f3252ec",
       "name": "Google Drive Trigger1",
@@ -1034,8 +780,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        1760,
-        432
+        608,
+        -128
       ],
       "id": "dbc20c5b-131e-47c3-beec-ce94db39c9ec",
       "name": "Copy file",
@@ -1068,8 +814,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        1952,
-        432
+        800,
+        -128
       ],
       "id": "438ab4a6-8476-41e0-abb3-db9393ccff23",
       "name": "Move file4",
@@ -1088,8 +834,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        208,
-        784
+        -944,
+        224
       ],
       "id": "f0f12d98-a53a-4c10-ba4f-8a1c19f5d609",
       "name": "Get a document4",
@@ -1121,8 +867,8 @@
       "type": "n8n-nodes-base.googleDriveTrigger",
       "typeVersion": 1,
       "position": [
-        0,
-        784
+        -1152,
+        224
       ],
       "id": "1d098ce5-f3a4-4743-9418-353621169bd4",
       "name": "Google Drive Trigger2",
@@ -1153,8 +899,8 @@
       "type": "@n8n/n8n-nodes-langchain.googleGemini",
       "typeVersion": 1,
       "position": [
-        976,
-        784
+        -160,
+        224
       ],
       "id": "e400923f-a3d2-42b0-9683-7574e327883e",
       "name": "Message a model3",
@@ -1173,8 +919,8 @@
       "type": "n8n-nodes-base.extractFromFile",
       "typeVersion": 1,
       "position": [
-        784,
-        784
+        -352,
+        224
       ],
       "id": "a4439649-93da-45fe-8ad5-cf4dba52af3c",
       "name": "Extract from File2"
@@ -1192,8 +938,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        592,
-        784
+        -544,
+        224
       ],
       "id": "ec3c0468-c7b7-4b8d-a87e-a13331189073",
       "name": "Download file2",
@@ -1224,8 +970,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        400,
-        784
+        -736,
+        224
       ],
       "id": "47bc156b-ed59-4c08-b67c-8dd4ab4da350",
       "name": "Search files and folders1",
@@ -1244,8 +990,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        1344,
-        784
+        192,
+        224
       ],
       "id": "97a379de-5cdb-4fe2-8308-b26e98a338c0",
       "name": "Create a document3",
@@ -1272,8 +1018,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        1552,
-        784
+        400,
+        224
       ],
       "id": "7c484121-dc50-4f32-bff8-a6625ae7c1e2",
       "name": "Update a document3",
@@ -1292,8 +1038,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        208,
-        960
+        -944,
+        400
       ],
       "id": "d5d7faa8-7dda-475d-bbdd-9976c80f5582",
       "name": "Get a document5",
@@ -1325,8 +1071,8 @@
       "type": "n8n-nodes-base.googleDriveTrigger",
       "typeVersion": 1,
       "position": [
-        0,
-        960
+        -1152,
+        400
       ],
       "id": "3fb9667c-a237-4b76-8670-83647e3623d8",
       "name": "Google Drive Trigger3",
@@ -1357,8 +1103,8 @@
       "type": "@n8n/n8n-nodes-langchain.googleGemini",
       "typeVersion": 1,
       "position": [
-        976,
-        960
+        -160,
+        400
       ],
       "id": "4d8a7d4e-9f35-487a-b42d-7547f4cbb908",
       "name": "Message a model4",
@@ -1377,8 +1123,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        1344,
-        960
+        192,
+        400
       ],
       "id": "902e9d27-191d-4ff5-9282-8b0a6e6459a3",
       "name": "Create a document4",
@@ -1405,8 +1151,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        1552,
-        960
+        400,
+        400
       ],
       "id": "16f6dd0b-b4bd-4add-8580-f8fb988c5c77",
       "name": "Update a document4",
@@ -1439,8 +1185,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        1760,
-        784
+        608,
+        224
       ],
       "id": "111d3ee6-758f-4291-84cf-a6c15729cddb",
       "name": "Move file2",
@@ -1459,8 +1205,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        208,
-        1136
+        -944,
+        576
       ],
       "id": "bddc890d-092d-43a1-9015-ce23747f0952",
       "name": "Get a document6",
@@ -1483,7 +1229,7 @@
         "triggerOn": "specificFolder",
         "folderToWatch": {
           "__rl": true,
-          "value": "1NxcZ8HqnO0nwRTQog70-aac4N9nfAWxF",
+          "value": "=1wOLQIY6AzK3dBEOOfKg3snUZhuj44-lS",
           "mode": "id"
         },
         "event": "fileCreated",
@@ -1492,8 +1238,8 @@
       "type": "n8n-nodes-base.googleDriveTrigger",
       "typeVersion": 1,
       "position": [
-        0,
-        1136
+        -1152,
+        576
       ],
       "id": "4613cb8b-7fe1-4918-ad6b-6cc40f3b16ee",
       "name": "Google Drive Trigger4",
@@ -1515,7 +1261,7 @@
         "messages": {
           "values": [
             {
-              "content": "=당신은 30년 경력의 총괄 전략 컨설턴트이자 콘텐츠 제작 매니저입니다. 고객사와의 모든 논의를 거쳐 최종 합의된 내용과 확정 예산을 바탕으로, 계약 체결을 위한 공식적인 '소셜미디어 영상 콘텐츠 기획안 최종본'을 작성해야 합니다. 보고서는 전략의 확신과 구체적인 실행 계획, 확정된 스펙 및 견적을 담아, 즉시 계약을 유도할 수 있도록 전문적이고 신뢰감을 주어야 합니다.\n[입력 데이터]\n1. 기존 제안서\n   - {{ $json.content }}\n\n[출력 형식 및 필수 목차]\nI. 프로젝트 개요 및 목표 설정\n   - 확정된 KPI (예: 조회수 500만 회, 전환율 0.5%) 제시.\nII. 시장 및 타겟 인사이트 분석\nIII. 최종 확정 콘텐츠 전략 및 컨셉\n   - 초안의 여러 아이디어 중 최종 확정된 1개의 컨셉에 대한 상세 설명.\nIV. 영상 콘텐츠 확정 상세 스펙 (숏폼 최적화)\n   - 확정된 스펙에 근거한 구체적인 러닝타임, 포맷, 제작 방식(OSMU 등) 명시.\n   -확정된 시퀀스 아이디어 또는 시리즈 구성 확정안 제시.\nV. 확정 제작 프로세스 및 운영 계획\n   - 콘텐츠 제작 매니저로서 확정된 제작 일정(착수일, 납품일) 및 품질 관리 프로세스 명시.\nVI. 최종 확정 견적 및 계약 조건\n   -(가장 중요)확정된 최종 계약 금액과 항목별 세부 비용을 명확히 제시하고, 계약금 및 잔금 지급 조건 명시.\n\n위에 제시된 정보를 모두 분석하고, 특히 최종 합의된 상세 스펙 및 확정 견적의 내용을 기반으로 기획안 샘플의 형식을 따르는 '소셜미디어 영상 콘텐츠 기획안 최종본'을 작성하십시오. 모든 내용은 확정적인 언어로 작성되어야 하며, 계약 체결을 위한 구체적인 확정 금액과 실행 일정을 명시해야 합니다.\n"
+              "content": "=당신은 30년 경력의 총괄 전략 컨설턴트이자 콘텐츠 제작 매니저입니다. 고객사와의 모든 논의를 거쳐 최종 합의된 내용과 확정 예산을 바탕으로, 계약 체결을 위한 공식적인 '소셜미디어 영상 콘텐츠 기획안 최종본'을 작성해야 합니다. 보고서는 전략의 확신과 구체적인 실행 계획, 확정된 스펙 및 견적을 담아, 즉시 계약을 유도할 수 있도록 전문적이고 신뢰감을 주어야 합니다.\n[입력 데이터]\n1. 기존 제안서\n   - {{ $json.content }}\n   - {{ $('Get a document6').item.json.content }}\n\n[출력 형식 및 필수 목차]\nI. 프로젝트 개요 및 목표 설정\n   - 확정된 KPI (예: 조회수 500만 회, 전환율 0.5%) 제시.\nII. 시장 및 타겟 인사이트 분석\nIII. 최종 확정 콘텐츠 전략 및 컨셉\n   - 초안의 여러 아이디어 중 최종 확정된 1개의 컨셉에 대한 상세 설명.\nIV. 영상 콘텐츠 확정 상세 스펙 (숏폼 최적화)\n   - 확정된 스펙에 근거한 구체적인 러닝타임, 포맷, 제작 방식(OSMU 등) 명시.\n   -확정된 시퀀스 아이디어 또는 시리즈 구성 확정안 제시.\nV. 확정 제작 프로세스 및 운영 계획\n   - 콘텐츠 제작 매니저로서 확정된 제작 일정(착수일, 납품일) 및 품질 관리 프로세스 명시.\nVI. 최종 확정 견적 및 계약 조건\n   -(가장 중요)확정된 최종 계약 금액과 항목별 세부 비용을 명확히 제시하고, 계약금 및 잔금 지급 조건 명시.\n\n위에 제시된 정보를 모두 분석하고, 특히 최종 합의된 상세 스펙 및 확정 견적의 내용을 기반으로 기획안 샘플의 형식을 따르는 '소셜미디어 영상 콘텐츠 기획안 최종본'을 작성하십시오. 모든 내용은 확정적인 언어로 작성되어야 하며, 계약 체결을 위한 구체적인 확정 금액과 실행 일정을 명시해야 합니다.\n"
             }
           ]
         },
@@ -1524,8 +1270,8 @@
       "type": "@n8n/n8n-nodes-langchain.googleGemini",
       "typeVersion": 1,
       "position": [
-        976,
-        1136
+        -160,
+        576
       ],
       "id": "b4ee927b-a0ba-4d8f-9078-4466f2cc098b",
       "name": "Message a model5",
@@ -1538,14 +1284,14 @@
     },
     {
       "parameters": {
-        "folderId": "1a8AH29f4AULErlZblEfbBSnStKLryIDH",
-        "title": "=영상 최종"
+        "folderId": "=1Yx8EvGc2a55DwFTAxMXP3wXfYemXIq6g",
+        "title": "=최종 제안서"
       },
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        1344,
-        1136
+        192,
+        576
       ],
       "id": "00eda633-697c-4d71-9399-a4dabbdee926",
       "name": "Create a document5",
@@ -1572,8 +1318,8 @@
       "type": "n8n-nodes-base.googleDocs",
       "typeVersion": 2,
       "position": [
-        1552,
-        1136
+        400,
+        576
       ],
       "id": "fdcc18dc-71ad-4153-af8f-91161fa73ef2",
       "name": "Update a document5",
@@ -1606,8 +1352,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        1760,
-        960
+        608,
+        400
       ],
       "id": "6d0ca099-30fe-466b-aac9-8ccd6b96fb57",
       "name": "Move file",
@@ -1617,9 +1363,753 @@
           "name": "Google Drive account"
         }
       }
+    },
+    {
+      "parameters": {
+        "operation": "move",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.documentId }}",
+          "mode": "id"
+        },
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1nuPusRzvKbjrnCNvTMQb-cDmOlLzEbVz",
+          "mode": "id"
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        608,
+        48
+      ],
+      "id": "6bd1d651-8385-4549-8d48-9442d30a3310",
+      "name": "Move file5",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "limit": 1,
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "1nuPusRzvKbjrnCNvTMQb-cDmOlLzEbVz",
+            "mode": "id"
+          }
+        },
+        "options": {
+          "fields": [
+            "id"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -736,
+        576
+      ],
+      "id": "71dc9021-6e86-4a2a-965b-aed4fe0d9f85",
+      "name": "Search files and folders2",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "documentURL": "={{ $json.id }}"
+      },
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 2,
+      "position": [
+        -544,
+        576
+      ],
+      "id": "18d72bec-bada-46c7-88d7-9e456d02904b",
+      "name": "Get a document7",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "6XFFv5sI5TNQCG2R",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1056,
+        2304
+      ],
+      "id": "f49250e0-38a4-47f0-bd04-e6049e012b29",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "operation": "deleteFile",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -400,
+        2320
+      ],
+      "id": "bcd77ac2-6967-4ad0-afb4-f347775dd41b",
+      "name": "Delete a file",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "returnAll": true,
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "=1_ne2KrRRjTVr78VZufvWWzbIgMtjNDYL",
+            "mode": "id"
+          }
+        },
+        "options": {
+          "fields": [
+            "id"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -848,
+        2304
+      ],
+      "id": "f11d0a8a-18db-4fb1-b324-6c0b2bb905b5",
+      "name": "Search files and folders3",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -640,
+        2304
+      ],
+      "id": "0011e0f8-f515-4ca7-82a5-fea6b08e4397",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "operation": "deleteFile",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        48,
+        2192
+      ],
+      "id": "270185cf-a93f-4012-ab8d-dc241c7d6b58",
+      "name": "Delete a file1",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "returnAll": true,
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "=1ek7-b12VfKhhENuIKPDaMBtOJRwKhqAo",
+            "mode": "id"
+          }
+        },
+        "options": {
+          "fields": [
+            "id"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        -400,
+        2176
+      ],
+      "id": "aad07a4c-8dab-4bc1-81f4-49c1d6c7feaa",
+      "name": "Search files and folders4",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -192,
+        2176
+      ],
+      "id": "c9943a3d-d0e4-4fc0-b52e-07f26692df64",
+      "name": "Loop Over Items1"
+    },
+    {
+      "parameters": {
+        "operation": "deleteFile",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        496,
+        2048
+      ],
+      "id": "ba7689c8-edae-426c-acbf-2cc8c3ec6c86",
+      "name": "Delete a file2",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "returnAll": true,
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "=1Yx8EvGc2a55DwFTAxMXP3wXfYemXIq6g",
+            "mode": "id"
+          }
+        },
+        "options": {
+          "fields": [
+            "id"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        48,
+        2032
+      ],
+      "id": "7bd4bcf1-219e-4a8c-9c3c-3ba1f02f2ff6",
+      "name": "Search files and folders5",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        256,
+        2032
+      ],
+      "id": "26179933-5fcc-4b75-bac2-b68e9dea9440",
+      "name": "Loop Over Items2"
+    },
+    {
+      "parameters": {
+        "operation": "deleteFile",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        944,
+        1920
+      ],
+      "id": "1da5c875-7278-4d1d-b009-407cda83f721",
+      "name": "Delete a file3",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "returnAll": true,
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "=1wOLQIY6AzK3dBEOOfKg3snUZhuj44-lS",
+            "mode": "id"
+          }
+        },
+        "options": {
+          "fields": [
+            "id"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        496,
+        1904
+      ],
+      "id": "42ab5248-d457-47c2-8c02-8efbef969869",
+      "name": "Search files and folders6",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        704,
+        1904
+      ],
+      "id": "6bddd3d7-d413-4ad3-ac9d-fb1510d4e3dc",
+      "name": "Loop Over Items3"
+    },
+    {
+      "parameters": {
+        "operation": "deleteFile",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1392,
+        1776
+      ],
+      "id": "eca520ae-0cfe-42bb-a606-fbd2d7284c81",
+      "name": "Delete a file4",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "returnAll": true,
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "=10Yp0NkoSxOBWI_JI9cnGb1dTdm9c-HWO",
+            "mode": "id"
+          }
+        },
+        "options": {
+          "fields": [
+            "id"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        944,
+        1760
+      ],
+      "id": "106c14e1-e626-45cb-9962-f9bdb2dad120",
+      "name": "Search files and folders7",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        1152,
+        1760
+      ],
+      "id": "4296c273-69dc-453f-88b9-2a4b4dfc002f",
+      "name": "Loop Over Items4"
+    },
+    {
+      "parameters": {
+        "operation": "deleteFile",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1840,
+        1648
+      ],
+      "id": "41a308bc-245b-4020-939b-c42b8f719809",
+      "name": "Delete a file5",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "returnAll": true,
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "=1NxcZ8HqnO0nwRTQog70-aac4N9nfAWxF",
+            "mode": "id"
+          }
+        },
+        "options": {
+          "fields": [
+            "id"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1392,
+        1632
+      ],
+      "id": "55b947a4-c720-4d7d-8482-c44d4f376e7c",
+      "name": "Search files and folders8",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        1600,
+        1632
+      ],
+      "id": "8c594658-885a-420b-b53f-649da99f1932",
+      "name": "Loop Over Items5"
+    },
+    {
+      "parameters": {
+        "operation": "deleteFile",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        2288,
+        1504
+      ],
+      "id": "f0954293-4d46-4d8b-87b3-9b311a06ca77",
+      "name": "Delete a file6",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "returnAll": true,
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "=1QI2PoJTPfx36cZ-gnXOH-XhXKVVfsdeR",
+            "mode": "id"
+          }
+        },
+        "options": {
+          "fields": [
+            "id"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1840,
+        1488
+      ],
+      "id": "fc4e5e77-d201-47da-9a30-261abb2d2250",
+      "name": "Search files and folders9",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        2048,
+        1488
+      ],
+      "id": "c754f65d-fe7e-486b-b7a9-659cd09be166",
+      "name": "Loop Over Items6"
+    },
+    {
+      "parameters": {
+        "operation": "deleteFile",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        2736,
+        1376
+      ],
+      "id": "69b82f46-e1a7-4279-8b85-500c72532dcf",
+      "name": "Delete a file7",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "returnAll": true,
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "=1-EO-Bcp3uVKDmVORSnHl4zQSrowctQKW",
+            "mode": "id"
+          }
+        },
+        "options": {
+          "fields": [
+            "id"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        2288,
+        1360
+      ],
+      "id": "b003b2b8-3006-40cc-b03b-00bbabbbc37a",
+      "name": "Search files and folders10",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        2496,
+        1360
+      ],
+      "id": "ad5eef4d-1ddc-478c-8db1-672f2b349cf0",
+      "name": "Loop Over Items7"
+    },
+    {
+      "parameters": {
+        "operation": "deleteFile",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        3184,
+        1216
+      ],
+      "id": "e3baa04f-d88d-49a1-98fb-161d030dcd0d",
+      "name": "Delete a file8",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "fileFolder",
+        "returnAll": true,
+        "filter": {
+          "folderId": {
+            "__rl": true,
+            "value": "=1nuPusRzvKbjrnCNvTMQb-cDmOlLzEbVz",
+            "mode": "id"
+          }
+        },
+        "options": {
+          "fields": [
+            "id"
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        2736,
+        1200
+      ],
+      "id": "3674ad3e-baa5-4d54-b2ba-1b6148b9011d",
+      "name": "Search files and folders11",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "Vaq75Nvi2fudlEm4",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        2944,
+        1200
+      ],
+      "id": "ce41c413-dbd4-4261-bdf8-784ff17c00f6",
+      "name": "Loop Over Items8"
     }
   ],
-  "pinData": {},
+  "pinData": {
+    "Message a model4": [
+      {
+        "json": {
+          "content": {
+            "parts": [
+              {
+                "text": "## 소셜미디어 영상 콘텐츠 기획안 최종본: '더 어반 십 스파클링 아이스티' 론칭 캠페인\n\n**수신:** 더 어반 십 마케팅팀 (박서준 팀장)\n**참조:** 더 어반 십 대표이사\n**발신:** 유어미디어 총괄 전략 컨설턴트/콘텐츠 제작 매니저\n**날짜:** 2023년 11월 27일\n\n**제목:** '더 어반 십 스파클링 아이스티' 론칭 기념 소셜미디어 영상 콘텐츠 기획안 (최종 합의 및 계약 확정본)\n\n---\n\n안녕하십니까, 더 어반 십 마케팅팀 박서준 팀장님.\n\n지난 여러 차례의 심도 깊은 논의와 전략 회의를 통해, '더 어반 십 스파클링 아이스티'의 성공적인 시장 안착을 위한 소셜미디어 영상 콘텐츠 캠페인 기획이 최종 합의되었습니다. 본 기획안은 고객사의 명확한 목표와 확정 예산을 바탕으로, '유어미디어'의 30년 전략 컨설팅 및 콘텐츠 제작 노하우를 집약하여 완성된 최종본입니다.\n\n본 보고서에 명시된 모든 내용은 확정된 계약 조건을 포함하며, 당사의 전문성과 실행력을 통해 캠페인의 성공을 강력히 약속드립니다.\n\n---\n\n### I. 프로젝트 개요 및 목표 설정\n\n**프로젝트명:** '더 어반 십 스파클링 아이스티' 론칭 기념 소셜미디어 영상 콘텐츠 캠페인\n**프로젝트 목표 재확인:** 프리미엄 음료 브랜드 '더 어반 십'의 신제품 '스파클링 아이스티' 라인 론칭을 통해 2040 직장인 타겟의 단기간 내 폭넓은 인지도 확보 및 프리미엄 브랜드 이미지 구축, **수도권 내 브랜드 인지도 30% 이상 증대**를 확정 목표로 합니다.\n\n**확정된 소셜미디어 KPI (핵심성과지표):**\n고객사와의 합의에 따라, 본 캠페인을 통해 아래의 핵심성과지표를 달성하는 것을 목표로 합니다.\n\n*   **총 누적 조회수 (Views):** 모든 숏폼 콘텐츠(릴스, 틱톡, 쇼츠) **총합 1,000만 회 이상** 달성 (캠페인 초기 2개월 기준)\n*   **참여율 (Engagement Rate):** 좋아요, 댓글, 공유, 저장 등 합산 **평균 5% 이상** 유지\n*   **완료율 (Completion Rate):** 숏폼 영상 **평균 70% 이상** 달성\n*   **브랜드 연상 (Brand Association):** '도심 속 상쾌하고 품격 있는 휴식' 키워드 연상률 **15% 이상 증대** (댓글 분석 및 초기/후기 설문조사 비교)\n\n### II. 시장 및 타겟 인사이트 분석\n\n**타겟 고객:** 2040 직장인\n**라이프스타일 특성:**\n*   바쁜 도시 생활과 업무 스트레스 속에서 '나를 위한 작은 사치'와 '잠깐의 휴식'을 추구하는 경향이 명확합니다.\n*   건강과 웰빙에 관심이 높으나, 맛과 즐거움 또한 포기하지 않는 소비 성향을 보입니다.\n*   트렌드에 민감하며, 세련되고 고급스러운 라이프스타일을 지향합니다.\n*   디지털 미디어 활용에 익숙하며, 숏폼 콘텐츠를 통한 정보 탐색 및 엔터테인먼트 소비에 적극적입니다.\n\n**소셜미디어 콘텐츠 반응 인사이트:**\n*   **시각적 만족감:** 감각적이고 아름다운 영상미, ASMR 요소 (얼음, 탄산 등)에 즉각적으로 반응하며 공유가 활발합니다.\n*   **공감 및 유머:** 바쁜 일상 속 직장인의 애환이나 작은 행복을 다룬 공감형 콘텐츠에 호응도가 높습니다.\n*   **정보성/실용성:** 짧고 명확하게 제품의 특장점이나 활용법(레시피)을 제시하는 콘텐츠를 선호합니다.\n*   **트렌디함:** 최신 밈, 유행하는 사운드 및 챌린지에 빠르게 반응하고 참여합니다.\n*   **아스피레이션 (Aspiration):** '나도 저렇게 즐기고 싶다'는 욕구를 자극하는 동경의 대상이 되는 라이프스타일 콘텐츠에 관심이 높습니다.\n\n### III. 최종 확정 콘텐츠 전략 및 컨셉\n\n**확정된 핵심 메시지:** \"도심 속 바쁜 일상, 당신을 위한 상쾌하고 품격 있는 휴식 한 모금, '더 어반 십' 스파클링 아이스티.\"\n\n**최종 확정 캠페인 컨셉:** **'Urban Refresh: 도심 속 스파클링 브레이크'**\n\n**컨셉 설명:**\n'더 어반 십'의 프리미엄 브랜드 이미지와 '스파클링 아이스티'의 독보적인 상쾌함을 유기적으로 연결하여, 2040 직장인들이 도시의 스트레스와 고단함 속에서 '나를 위한 품격 있는 휴식'을 갈망할 때 가장 먼저 떠올리는 음료로 강력히 포지셔닝합니다. 단순한 갈증 해소를 넘어, 삶의 질을 높이는 '스파클링한 순간'을 제공하는 특별한 브랜드 경험을 강조함으로써, 고객의 감성적 유대감을 형성하고 제품 구매로 이어지는 강력한 동기를 부여하는 것이 본 컨셉의 핵심입니다. 이 컨셉은 모든 콘텐츠의 기획, 제작, 배포 과정에서 일관된 톤앤매너와 메시지를 유지하는 강력한 구심점이 될 것입니다.\n\n### IV. 영상 콘텐츠 확정 상세 스펙 (숏폼 최적화)\n\n본 캠페인의 모든 영상 콘텐츠는 'One Source Multi-Use (OSMU)' 전략에 따라 기획 및 제작됩니다. 핵심 콘텐츠 소스를 활용하여 인스타그램 릴스, 틱톡, 유튜브 쇼츠 등 각 플랫폼의 특성과 최적화된 형식에 맞춰 편집 및 배포함으로써, 효율적인 예산 집행과 최대의 확산 효과를 보장합니다.\n\n**타겟 플랫폼:** 인스타그램 릴스 (Reels), 틱톡 (TikTok), 유튜브 쇼츠 (YouTube Shorts)\n**확정 러닝타임:** 15초 ~ 45초 (최대 60초)\n**톤앤매너:** 고급스럽고 세련된, 청량하고 상쾌한, 현대적이고 트렌디한, 여유와 품격이 느껴지는\n**포맷 특성 (OSMU 적용):**\n*   **빠른 전환 및 핵심 집중:** 숏폼 콘텐츠의 특성을 고려하여 초반 3초 이내 시선 강탈 및 핵심 메시지 전달에 집중합니다.\n*   **감각적 비주얼:** 제품의 색감, 탄산 기포, 얼음 등 시원하고 섬세한 디테일 클로즈업 샷을 강조하여 시각적 만족도를 극대화합니다.\n*   **ASMR 요소:** 얼음 흔들리는 소리, 탄산 터지는 소리 등 청각적 쾌감을 극대화하여 몰입도를 높입니다.\n*   **트렌디한 사운드:** 최신 유행 BGM 및 효과음을 활용하여 자연스러운 바이럴 및 트렌디함을 유도합니다.\n*   **온스크린 텍스트:** 핵심 슬로건 및 제품명, CTA(Call To Action)를 명확하고 간결하게 제시하여 정보 전달력을 높입니다.\n*   **플랫폼 최적화:** 릴스, 틱톡, 쇼츠 각 플랫폼의 권장 비율 (9:16) 및 기능(스티커, 해시태그 챌린지 등)에 맞춰 편집 및 추가 요소를 적용합니다.\n\n**확정된 영상 시리즈 구성:**\n고객사와의 논의를 통해 아래 3가지 시리즈를 메인 축으로 하여 총 8편의 숏폼 영상 콘텐츠(각 시퀀스별 1편)를 제작, 순차적으로 배포합니다.\n\n1.  **Series 1: '나만의 스파클링 브레이크' (Hero Content - 총 2편)**\n    *   **컨셉:** 바쁜 도시 직장인들이 '더 어반 십'과 함께 자신만의 프리미엄 휴식 시간을 즐기는 모습을 보여주며 공감대 형성 및 대리 만족 유도.\n    *   **시퀀스 A: '오피스 이스케이프'** (15-20초)\n        *   업무에 지친 직장인이 '더 어반 십' 한 모금으로 순간의 평온과 상쾌함을 되찾는 모습. ASMR 효과를 극대화하고 제품의 청량감을 직관적으로 전달.\n    *   **시퀀스 B: '퇴근 후 프리미엄 리프레쉬'** (25-30초)\n        *   퇴근 후 집이나 개인 공간에서 '더 어반 십'과 함께 하루를 마무리하는 고급스러운 순간. 세련된 라이프스타일을 연출.\n\n2.  **Series 2: '스파클링 레시피 챌린지' (Interactive / UGC Encouragement - 총 4편)**\n    *   **컨셉:** 간단하고 세련된 '더 어반 십' 활용 레시피를 소개하고, 시청자들이 자신만의 레시피를 공유하도록 유도하여 참여 및 확산 극대화. **마이크로/나노 인플루언서 4인 협업 진행.**\n    *   **시퀀스 C: '30초 스파클링 믹솔로지' (레시피 1, 2, 3, 4)** (각 30-45초)\n        *   누구나 쉽게 따라 할 수 있는 '더 어반 십' 베이스의 간단한 논알콜 칵테일 레시피 영상을 각 인플루언서의 개성 있는 연출로 4편 제작. 시청자 참여 유도 해시태그 챌린지 기획.\n\n3.  **Series 3: '도시의 미식, 더 어반 십' (Taste of the City - 총 2편)**\n    *   **컨셉:** 2040 직장인이 선호하는 미식 메뉴와 '더 어반 십'을 페어링하여, 세련된 라이프스타일 음료로서의 이미지를 강조.\n    *   **시퀀스 D: '브런치 & 스파클링 티'** (30-40초)\n        *   주말 브런치 또는 세련된 다이닝과 '더 어반 십'이 어우러지는 모습. 제품이 미식 경험의 품격을 높이는 요소를 강조.\n    *   **시퀀스 E: '오피스 런치 & 힐링 스파클링'** (20-30초)\n        *   점심 식사 중, 사무실 또는 캐주얼한 카페에서 '더 어반 십'과 함께하는 상쾌한 휴식. 제품의 접근성과 일상성을 강조.\n\n### V. 확정 제작 프로세스 및 운영 계획\n\n당사의 30년 경력 총괄 전략 컨설턴트/콘텐츠 제작 매니저가 기획부터 최종 검수, 캠페인 운영까지 전 과정을 총괄 지휘하여 최고의 결과물을 보장합니다.\n\n**확정 제작 일정:**\n\n*   **Phase 1: 기획 및 프리 프로덕션 (2023년 12월 4일 ~ 12월 15일)**\n    *   최종 콘셉트 및 스토리보드 확정\n    *   촬영 스케줄 및 장소 섭외 완료\n    *   모델/인플루언서 캐스팅 (2040 타겟 부합) 및 계약 완료\n    *   소품 및 의상 준비 완료\n*   **Phase 2: 프로덕션 (2023년 12월 18일 ~ 12월 29일)**\n    *   고품질 카메라 및 조명 활용 촬영 진행\n    *   제품 클로즈업, 음용 장면 등 핵심 비주얼 집중 촬영\n    *   ASMR 사운드 전문 녹음 진행\n*   **Phase 3: 포스트 프로덕션 (2024년 1월 2일 ~ 1월 22일)**\n    *   영상 편집, 색 보정, CG 작업 (필요시) 완료\n    *   트렌디한 음악 및 효과음 삽입 완료\n    *   자막 및 온스크린 그래픽 디자인 완료\n    *   클라이언트 최종 피드백 반영 및 최종본 검수 및 납품\n*   **Phase 4: 배포 및 운영 (2024년 2월 1일 캠페인 시작)**\n    *   플랫폼별 최적화된 포맷 업로드 및 캠페인 개시\n    *   유료 매체 집행 및 A/B 테스트를 통한 효율 극대화\n    *   댓글/DM 관리 및 참여 유도\n    *   성과 분석 및 정기 보고 진행 (월 2회)\n\n**확정된 품질 관리 계획:**\n\n*   **전문가 총괄:** 본 기획안의 모든 내용은 유어미디어의 총괄 전략 컨설턴트/콘텐츠 제작 매니저가 직접 기획, 제작 및 운영 전 과정을 총괄하여 최고 수준의 품질을 확보합니다.\n*   **브랜드 아이덴티티 준수:** 고객사의 프리미엄 브랜드 이미지, 톤앤매너, 핵심 메시지 가이드라인을 철저히 준수하여 일관된 브랜드 경험을 제공합니다.\n*   **정기 피드백:** 각 제작 단계별로 클라이언트와의 긴밀한 커뮤니케이션 및 정기적인 피드백 반영을 통해 고객 만족도를 최우선으로 합니다.\n*   **트렌드 반영:** 숏폼 콘텐츠의 최신 트렌드, 인기 사운드, 비주얼 스타일 등을 지속적으로 연구 및 적용하여 높은 바이럴 가능성을 확보합니다.\n*   **데이터 기반 최적화:** 캠페인 진행 중 실시간 데이터 모니터링을 통해 콘텐츠 성과를 정밀하게 분석하고, 필요시 추가 제작 또는 수정 제안을 통해 캠페인 효율을 지속적으로 최적화합니다.\n\n### VI. 최종 확정 견적 및 계약 조건\n\n고객사와의 협의를 거쳐 확정된 '더 어반 십 스파클링 아이스티' 론칭 기념 소셜미디어 영상 콘텐츠 캠페인의 총 계약 금액과 세부 항목별 견적, 그리고 계약 조건은 다음과 같습니다.\n\n**총 계약 금액:** **55,000,000원 (VAT 별도)**\n(오천오백만원정, 부가세 별도)\n\n**항목별 세부 비용:**\n\n| 구분                           | 비율       | 확정 금액 (VAT 별도) | 세부 내역                                                                                                                                                                                                                                                                                                                                                       |\n| :----------------------------- | :--------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |\n| **콘텐츠 기획 및 제작**        | 55%        | **30,250,000원**     | - 캠페인 전략 수립, 콘셉트 및 스토리보드 기획<br>- 영상 연출 및 촬영(전문가 팀)<br>- 영상 편집, 색 보정, CG 작업<br>- ASMR 사운드 믹싱, 트렌디 BGM 및 효과음 삽입<br>- 자막 및 온스크린 그래픽 디자인<br>- 전문 모델/배우 섭외 및 출연료<br>- 마이크로/나노 인플루언서 4인 섭외 및 콘텐츠 제작료<br>- 촬영 장소 섭외 및 사용료<br>- 소품 및 의상 비용 일체<br>- 최종 검수 및 납품 |\n| **유료 매체 집행 및 부스팅**   | 35%        | **19,250,000원**     | - 인스타그램 릴스, 틱톡, 유튜브 쇼츠 등 주요 숏폼 플랫폼 내 타겟팅 유료 광고 집행<br>- 확정된 8편의 숏폼 콘텐츠 부스팅 및 도달률/인지도 극대화<br>- 인플루언서 협업 콘텐츠 확산 및 챌린지 광고 집행 |\n| **성과 분석 및 운영 관리**     | 10%        | **5,500,000원**      | - 캠페인 데이터 실시간 모니터링 및 분석<br>- 인사이트 도출 및 최적화 전략 제안<br>- 월 2회 정기 보고서 작성 및 브리핑<br>- 댓글/DM 등 소셜미디어 채널 운영 및 커뮤니케이션 관리 |\n| **총계**                       | **100%**   | **55,000,000원**     |                                                                                                                                                                                                                                                                                                                                     |\n\n**계약금 및 잔금 지급 조건:**\n\n*   **계약금:** 총 계약 금액의 **50% (27,500,000원, VAT 별도)**를 본 계약 체결일로부터 7영업일 이내에 지급합니다.\n*   **잔금:** 총 계약 금액의 **50% (27,500,000원, VAT 별도)**는 최종 영상 콘텐츠 납품 완료일로부터 7영업일 이내에 지급합니다.\n\n---\n\n본 최종 기획안은 '더 어반 십'의 신제품 '스파클링 아이스티'가 시장에서 가장 돋보이는 존재감을 확보하고, 2040 직장인 타겟에게 '도심 속 상쾌하고 품격 있는 휴식'이라는 명확한 브랜드 가치를 심어줄 수 있는 가장 효과적인 로드맵입니다.\n\n저희 유어미디어는 본 캠페인의 성공을 확신하며, 고객사의 기대 이상의 성과를 달성하기 위해 모든 역량을 집중할 것을 약속드립니다.\n\n본 기획안을 검토하시어 조속한 계약 체결을 통해 성공적인 캠페인을 함께 시작할 수 있기를 기대합니다. 궁금하신 사항은 언제든 편하게 문의하여 주십시오.\n\n감사합니다.\n\n---\n\n**유어미디어 총괄 전략 컨설턴트/콘텐츠 제작 매니저**\n(성명) 배상"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      }
+    ]
+  },
   "connections": {
     "Schedule Trigger": {
       "main": [
@@ -1771,7 +2261,13 @@
     },
     "Update a document2": {
       "main": [
-        []
+        [
+          {
+            "node": "Move file5",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     },
     "Message a model2": {
@@ -1843,17 +2339,6 @@
         ]
       ]
     },
-    "Download file5": {
-      "main": [
-        [
-          {
-            "node": "Extract from File5",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Extract from File4": {
       "main": [
         [
@@ -1881,64 +2366,6 @@
         [
           {
             "node": "Message a model",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Download file": {
-      "main": [
-        [
-          {
-            "node": "Extract from File",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Switch2": {
-      "main": [
-        [
-          {
-            "node": "Get row(s) in sheet2",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Get a document3",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Download file",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Get row(s) in sheet2": {
-      "main": [
-        [
-          {
-            "node": "Edit Fields2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Edit Fields2": {
-      "main": [
-        [
-          {
-            "node": "Aggregate2",
             "type": "main",
             "index": 0
           }
@@ -2147,7 +2574,7 @@
       "main": [
         [
           {
-            "node": "Message a model5",
+            "node": "Search files and folders2",
             "type": "main",
             "index": 0
           }
@@ -2197,13 +2624,400 @@
           }
         ]
       ]
+    },
+    "Search files and folders2": {
+      "main": [
+        [
+          {
+            "node": "Get a document7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a document7": {
+      "main": [
+        [
+          {
+            "node": "Message a model5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders3": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Delete a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a file": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a file1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders4": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items1": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders5",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Delete a file1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a file2": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders5": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items2": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders6",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Delete a file2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a file3": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders6": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items3": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders7",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Delete a file3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a file4": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders7": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items4": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Delete a file4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a file5": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders8": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items5": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders9",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Delete a file5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a file6": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders9": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items6": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders10",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Delete a file6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a file7": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders10": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items7": {
+      "main": [
+        [
+          {
+            "node": "Search files and folders11",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Delete a file7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delete a file8": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search files and folders11": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items8": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Delete a file8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "b9922a51-2e72-431d-8efa-2b3607780da2",
+  "versionId": "62b9d414-596e-498d-aab1-8789476ee9be",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "f66912c3fb6b7f3ee99977ebd99a1ea7c2f24b503ea45c386d82cfeffface6eb"
