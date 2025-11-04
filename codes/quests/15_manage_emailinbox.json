@@ -1,0 +1,376 @@
+{
+  "name": "15_manage_emailinbox",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "addLabels",
+        "messageId": "={{ $json.id }}",
+        "labelIds": [
+          "Label_7333562879489602712"
+        ]
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        608,
+        272
+      ],
+      "id": "f9b960bc-0f5d-43a2-997f-9ee8e785d8b3",
+      "name": "Add label to message",
+      "webhookId": "a92fbfcf-3f87-4403-bae9-fa5ad40cc304",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "RcKoZuM8v0P2rHRa",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "getAll",
+        "limit": 10,
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        -64,
+        224
+      ],
+      "id": "9f35ce43-cb7b-4988-9581-5c9af862465b",
+      "name": "Get many messages",
+      "webhookId": "719dc2f9-6143-47a1-907c-ed786b359f1d",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "RcKoZuM8v0P2rHRa",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "inputText": "={{ $json.snippet }}",
+        "categories": {
+          "categories": [
+            {
+              "category": "social"
+            },
+            {
+              "category": "sale"
+            }
+          ]
+        },
+        "options": {
+          "fallback": "other"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.textClassifier",
+      "typeVersion": 1.1,
+      "position": [
+        192,
+        208
+      ],
+      "id": "208bcb03-15e4-4c9b-9607-0f444e3c23e8",
+      "name": "Text Classifier"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        192,
+        512
+      ],
+      "id": "ca7bf389-7438-42f0-8da6-1cd89fdee23e",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "OuB6Ux2DpGfcS3Hb",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "addLabels",
+        "messageId": "={{ $json.id }}",
+        "labelIds": [
+          "Label_5194540393283403101"
+        ]
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        608,
+        464
+      ],
+      "id": "2dc5ca6b-e0e0-4c51-9627-795d9b9e5a07",
+      "name": "Add label to message1",
+      "webhookId": "34ad111e-ffb2-429e-84a1-f90104bc959c",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "RcKoZuM8v0P2rHRa",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "removeLabels",
+        "messageId": "={{ $json.id }}",
+        "labelIds": [
+          "INBOX"
+        ]
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        816,
+        272
+      ],
+      "id": "02c5e7e0-71b6-497f-b43c-3e564322e2c1",
+      "name": "Remove label from message",
+      "webhookId": "476b5af4-96db-410c-828b-8490d05c038e",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "RcKoZuM8v0P2rHRa",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "removeLabels",
+        "messageId": "={{ $json.id }}",
+        "labelIds": [
+          "INBOX"
+        ]
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        800,
+        464
+      ],
+      "id": "5bb0d3d3-56eb-4cc1-86d3-9d03ea5c162c",
+      "name": "Remove label from message1",
+      "webhookId": "af0a7815-d303-470b-912a-0bb3fdc9b0d9",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "RcKoZuM8v0P2rHRa",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-2.5-flash",
+          "mode": "list",
+          "cachedResultName": "models/gemini-2.5-flash"
+        },
+        "messages": {
+          "values": [
+            {
+              "content": "={{ $json.snippet }}\n\n내용을 분석하여 다음 조건에 따라 답변 생성\n\n'약속 시간이 오전'이면 부정문,\n'약속 시간이 오후'이면 따로 확인하여 연락 준다고 답변\n약속 시간이 따로 없으면 시간 나면 전화 준다고 답변"
+            }
+          ]
+        },
+        "jsonOutput": true,
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1,
+      "position": [
+        608,
+        80
+      ],
+      "id": "d06c7b1c-276b-4f05-b50f-c55363617e73",
+      "name": "Message a model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "OuB6Ux2DpGfcS3Hb",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "resource": "thread",
+        "operation": "reply",
+        "threadId": "={{ $('Text Classifier').item.json.id }}",
+        "messageId": "={{ $('Text Classifier').item.json.snippet }}",
+        "message": "={{ $json.content.parts[0].text }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        960,
+        80
+      ],
+      "id": "47ca6590-ae7e-4c3f-ac22-5c69e895d895",
+      "name": "Reply to a message",
+      "webhookId": "5d5da4c7-ee55-4e22-8970-d5582058e010",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "RcKoZuM8v0P2rHRa",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "delete",
+        "messageId": "={{ $json.id }}"
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1168,
+        80
+      ],
+      "id": "a7b0dcb3-29c5-4fcd-b038-6375083128d8",
+      "name": "Delete a message",
+      "webhookId": "8c153018-b6aa-43b5-a089-18cd5a9f7662",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "RcKoZuM8v0P2rHRa",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        224
+      ],
+      "id": "2735d0f8-8265-4709-90bf-4467dd164c27",
+      "name": "When clicking ‘Execute workflow’"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Get many messages": {
+      "main": [
+        [
+          {
+            "node": "Text Classifier",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Text Classifier",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Text Classifier": {
+      "main": [
+        [
+          {
+            "node": "Message a model",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Add label to message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Add label to message1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [],
+        []
+      ]
+    },
+    "Add label to message": {
+      "main": [
+        [
+          {
+            "node": "Remove label from message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add label to message1": {
+      "main": [
+        [
+          {
+            "node": "Remove label from message1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Message a model": {
+      "main": [
+        [
+          {
+            "node": "Reply to a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Reply to a message": {
+      "main": [
+        [
+          {
+            "node": "Delete a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Get many messages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "f662012b-ee98-498d-9f33-9a81bc7fd090",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "bf8f9642b0f8ec0fe291ff99c4eafe95110dd51880fef554a79deba33f427ef2"
+  },
+  "id": "Q2574ir2xes1EFrO",
+  "tags": []
+}
