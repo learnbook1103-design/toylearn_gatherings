@@ -110,7 +110,7 @@
             "Current": "={{ $('HTTP Request').item.json.weather }}",
             "확인 일시": "={{ $('On form submission').item.json.submittedAt }}",
             "좌표": "={{ $('HTTP Request1').item.json.lat }}, {{ $('HTTP Request1').item.json.lon }}",
-            "Daily Forecast": "={{ $json.list }}"
+            "Daily Forecast": "={{ $json.weather.join('\\n' ) }}"
           },
           "matchingColumns": [
             "도시명"
@@ -172,7 +172,7 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1104,
+        1728,
         -64
       ],
       "id": "fbdf19c6-1b94-4b2b-b195-1bdfd0ae0c08",
@@ -214,6 +214,63 @@
       ],
       "id": "2af7833d-7d31-4501-9687-951db234401f",
       "name": "HTTP Request2"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "list",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        1104,
+        -64
+      ],
+      "id": "cdacfa72-18c2-4db0-9a61-8b6f8df16bb8",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "fieldsToAggregate": {
+          "fieldToAggregate": [
+            {
+              "fieldToAggregate": "weather"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        1520,
+        -64
+      ],
+      "id": "405d6486-e25f-4940-b33f-d6097ce6001f",
+      "name": "Aggregate"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "afb9ffea-ad8b-4212-aa1d-5a1673ca15f3",
+              "name": "weather",
+              "value": "={{ $json.dt_txt }}, {{ JSON.stringify($json.weather)}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1312,
+        -64
+      ],
+      "id": "42cc003a-e915-4ac8-b114-491f2dfea5b5",
+      "name": "Edit Fields"
     }
   ],
   "pinData": {},
@@ -255,7 +312,40 @@
       "main": [
         [
           {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate": {
+      "main": [
+        [
+          {
             "node": "Append or update row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Aggregate",
             "type": "main",
             "index": 0
           }
@@ -267,7 +357,7 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "eb01ca01-22b9-4b3a-bd91-5553f566c11e",
+  "versionId": "212358c1-6f9f-4acf-98de-66cdd66bfaf3",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "fd7e967adadfbd6309b76d47ece6ef9d6ec5237317e9266c934eb3a18622d768"
