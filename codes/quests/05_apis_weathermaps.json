@@ -107,7 +107,7 @@
           "mappingMode": "defineBelow",
           "value": {
             "도시명": "={{ $('On form submission').item.json['도시 이름'] }}",
-            "Current": "={{ $('HTTP Request').item.json.weather }}",
+            "Current": "={{JSON.stringify( $('HTTP Request').item.json.weather).replace(/[{}[\\]\"]/g, '') }}",
             "확인 일시": "={{ $('On form submission').item.json.submittedAt }}",
             "좌표": "={{ $('HTTP Request1').item.json.lat }}, {{ $('HTTP Request1').item.json.lon }}",
             "Daily Forecast": "={{ $json.weather.join('\\n' ) }}"
@@ -172,7 +172,7 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1728,
+        1952,
         -64
       ],
       "id": "fbdf19c6-1b94-4b2b-b195-1bdfd0ae0c08",
@@ -209,25 +209,11 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        896,
+        1120,
         -64
       ],
       "id": "2af7833d-7d31-4501-9687-951db234401f",
       "name": "HTTP Request2"
-    },
-    {
-      "parameters": {
-        "fieldToSplitOut": "list",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.splitOut",
-      "typeVersion": 1,
-      "position": [
-        1104,
-        -64
-      ],
-      "id": "cdacfa72-18c2-4db0-9a61-8b6f8df16bb8",
-      "name": "Split Out"
     },
     {
       "parameters": {
@@ -243,7 +229,7 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        1520,
+        1744,
         -64
       ],
       "id": "405d6486-e25f-4940-b33f-d6097ce6001f",
@@ -256,7 +242,7 @@
             {
               "id": "afb9ffea-ad8b-4212-aa1d-5a1673ca15f3",
               "name": "weather",
-              "value": "={{ $json.dt_txt }}, {{ JSON.stringify($json.weather)}}",
+              "value": "={{ $json.dt_txt }}, {{ JSON.stringify($json.weather).replace(/[{}[\\]\"]/g, '') }}",
               "type": "string"
             }
           ]
@@ -266,11 +252,48 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1312,
+        1536,
         -64
       ],
       "id": "42cc003a-e915-4ac8-b114-491f2dfea5b5",
       "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "81274d8f-3300-4528-a022-7ae09c53e616",
+              "name": "weather",
+              "value": "={{ $json.weather }}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        896,
+        -64
+      ],
+      "id": "fa5f33b9-6f66-47a6-96fd-ae00e22135d7",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "list",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        1328,
+        -64
+      ],
+      "id": "8b93fece-d7cc-414c-b3eb-91c0b90186ec",
+      "name": "Split Out"
     }
   ],
   "pinData": {},
@@ -301,7 +324,7 @@
       "main": [
         [
           {
-            "node": "HTTP Request2",
+            "node": "Edit Fields1",
             "type": "main",
             "index": 0
           }
@@ -313,17 +336,6 @@
         [
           {
             "node": "Split Out",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Split Out": {
-      "main": [
-        [
-          {
-            "node": "Edit Fields",
             "type": "main",
             "index": 0
           }
@@ -351,13 +363,35 @@
           }
         ]
       ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "212358c1-6f9f-4acf-98de-66cdd66bfaf3",
+  "versionId": "4bc07a5c-43cb-470b-a14a-3e0fe16c8a04",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "fd7e967adadfbd6309b76d47ece6ef9d6ec5237317e9266c934eb3a18622d768"
